@@ -33,25 +33,27 @@ public class Main {
         Hankasanki hankasanki = new Hankasanki();
         int hankasanresult = hankasanki.HankasankiS(ArrInt[ArrInt.length - 1]
                         , ArrInt2[ArrInt2.length - 1]);//S
-        int[] result = new int[str.length() + 1];//答えを入れる配列を作る
+        int[] result = new int[str.length() + 1];//答えを入れる配列を作る 入力値＋１
         result[result.length - 1] = hankasanresult;
         System.out.println(hankasanresult);
+        System.out.println("result.length : "+result.length);
 
         Zenkasanki zenkasanki = new Zenkasanki();
         int c = hankasanki.HankasankiC(ArrInt[ArrInt.length - 1]
                 , ArrInt[ArrInt2.length - 1]);
         int cbox = c;
-        System.out.println("cbox : "+cbox);
+        System.out.println("cbox繰り上がり : "+cbox);
         for(int j = 1; j <= str.length();j++){
             result[result.length - j-1] = zenkasanki.
-                    zenkasankiS(ArrInt[ArrInt.length-j],ArrInt2[ArrInt2.length-j],cbox);
+                    zenkasankiS(ArrInt[ArrInt.length - j],ArrInt2[ArrInt2.length -j],cbox);
 //            result[result.length - 2] = zenkasanki.
 //                    zenkasankiS(ArrInt[ArrInt.length-2],ArrInt2[ArrInt2.length-2],c)
             cbox = zenkasanki.
-                    zenkasankiC(ArrInt[ArrInt.length-j],ArrInt2[ArrInt2.length-j],cbox);
+                    zenkasankiC(ArrInt[ArrInt.length -j],ArrInt2[ArrInt2.length -j],cbox);
             System.out.println("result[result.length - j-1]:"+result[result.length - j-1]);
-            System.out.println("cbox :" +cbox+" "+(int)(ArrInt.length-j));
+            System.out.println("cbox繰り上がり :" +cbox+" "+(int)(ArrInt.length-j));
         }
+
         System.out.println(Arrays.toString(result));
 
     }
