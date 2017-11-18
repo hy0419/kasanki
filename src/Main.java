@@ -43,7 +43,7 @@ public class Main {
                 , ArrInt[ArrInt2.length - 1]);
         int cbox = c;
         System.out.println("cbox繰り上がり : "+cbox);
-        for(int j = 1; j <= str.length();j++){
+        for(int j = 1; j < str.length();j++){
             result[result.length - j-1] = zenkasanki.
                     zenkasankiS(ArrInt[ArrInt.length - j-1],ArrInt2[ArrInt2.length -j-1],cbox);
 //            result[result.length - 2] = zenkasanki.
