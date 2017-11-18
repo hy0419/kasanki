@@ -54,7 +54,7 @@ public class Main {
             System.out.println("cbox繰り上がり :" +cbox+" "+(int)(ArrInt.length-j));
 
         }
-
+        
         System.out.println(Arrays.toString(result));
 
     }
