@@ -33,7 +33,7 @@ public class Main {
         Hankasanki hankasanki = new Hankasanki();
         int hankasanresult = hankasanki.HankasankiS(ArrInt[ArrInt.length - 1]
                         , ArrInt2[ArrInt2.length - 1]);//S
-        int[] result = new int[str.length() + 1];//答えを入れる配列を作る 入力値＋１
+        int[] result = new int[str.length() + 1];//答えを入れる配列 入力値＋１
         result[result.length - 1] = hankasanresult;
         System.out.println(hankasanresult);
         System.out.println("result.length : "+result.length);
