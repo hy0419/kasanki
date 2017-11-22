@@ -44,6 +44,7 @@ public class Main {
         int cbox = c;
         System.out.println("cbox繰り上がり : "+cbox);
         for(int j = 1; j < str.length();j++){
+            System.out.println(j);
             result[result.length - j-1] = zenkasanki.
                     zenkasankiS(ArrInt[ArrInt.length - j],ArrInt2[ArrInt2.length -j],cbox);
             cbox = zenkasanki.
