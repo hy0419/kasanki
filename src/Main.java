@@ -50,6 +50,7 @@ public class Main {
             cbox = zenkasanki.
                     zenkasankiC(ArrInt[ArrInt.length -j],ArrInt2[ArrInt2.length -j],cbox);
             System.out.println("result[result.length - j-1] :"+result[result.length - j-1]);
+            System.out.println("ArrInt[ArrInt.length-j]:"+ArrInt[ArrInt.length-j]);
             System.out.println("cbox繰り上がり :" +cbox+" "+(int)(ArrInt.length-j));
 
         }
