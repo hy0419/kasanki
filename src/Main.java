@@ -41,19 +41,20 @@ System.out.println(ArrInt[i]);
         int c = hankasanki.HankasankiC(ArrInt[ArrInt.length - 1]
                 , ArrInt[ArrInt2.length - 1]);
         int cbox = c;
+        int j=0;
         System.out.println("cbox : "+cbox);
-        for(int j = 1; j <= str.length();j++){
+        for(j = 1; j < str.length();j++){
             System.out.println("j : "+j);
 
             result[result.length - j-1] = zenkasanki.
-                    zenkasankiS(ArrInt[ArrInt.length - j],ArrInt2[ArrInt2.length -j],cbox);
+                    zenkasankiS(ArrInt[ArrInt.length - j-1],ArrInt2[ArrInt2.length -j-1],cbox);
             System.out.println("result[result.length - j-1] : "+result[result.length - j-1]);
-            System.out.println("result[j] : "+result[j]);
             cbox = zenkasanki.
-                    zenkasankiC(ArrInt[ArrInt.length -j],ArrInt2[ArrInt2.length -j],cbox);
+                    zenkasankiC(ArrInt[ArrInt.length -j-1],ArrInt2[ArrInt2.length -j-1],cbox);
             System.out.println("cbox : "+cbox);
 
         }
+        result[result.length - j-1]=cbox;
         System.out.println("str.length() : "+str.length());
 
         System.out.println(Arrays.toString(result));
