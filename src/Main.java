@@ -39,7 +39,7 @@ System.out.println(ArrInt[i]);
 
         Zenkasanki zenkasanki = new Zenkasanki();
         int c = hankasanki.HankasankiC(ArrInt[ArrInt.length - 1]
-                , ArrInt[ArrInt2.length - 1]);
+                , ArrInt2[ArrInt2.length - 1]);
         int cbox = c;
         int j=0;
         System.out.println("cbox : "+cbox);
