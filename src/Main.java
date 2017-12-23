@@ -32,7 +32,7 @@ public class Main {
                         , ArrInt2[ArrInt2.length - 1]);//S
         int[] result = new int[str.length() + 1];//答えを入れる配列 入力値＋１
         result[result.length - 1] = hankasanresult;
-        System.out.println("半加算");
+        System.out.print("半加算");
         Zenkasanki zenkasanki = new Zenkasanki();
         int c = hankasanki.HankasankiC(ArrInt[ArrInt.length - 1]
                 , ArrInt2[ArrInt2.length - 1]);
